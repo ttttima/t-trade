@@ -96,6 +96,8 @@ button {
 }
 
 .table {
+    display: flex;
+    gap: 20px;
     position: fixed;
     top: calc(50% - 350px);
     left: 50%;
