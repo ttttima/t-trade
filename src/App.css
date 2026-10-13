@@ -1,26 +1,23 @@
 body {
     background-color: #202020;
-    color: rgb(209, 208, 208);}
+    color: rgb(209, 208, 208);
+}
 
 .buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
     gap: 10px;
 }
 
 button {
     border: none;
-    outline: none;
 }
 
 
 #sellButton {
     background-color: rgb(148, 0, 0);
-    height: 50px;
-    width: 100px;
     border-radius: 50px;
 }
 
@@ -35,8 +32,6 @@ button {
 
 #buyButton {
     background-color: green;
-    height: 50px;
-    width: 100px;
     border-radius: 50px;
 }
 
@@ -62,20 +57,22 @@ button {
 }
 
 .chart {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: 500px;
+    width: 100%;
     background-color: black;
     overflow: hidden;
 }
 
+.buttons-size-100-50 {
+    height: 50px;
+    width: 100px;
+}
+
+.width-third {
+    width: 33%;
+}
+
 .priceChart {
     display: block;
-    width: 100%;
-    height: 100%;
 }
 
 .gridLine {
@@ -85,10 +82,6 @@ button {
 }
 
 .coinPrice {
-    position: absolute;
-    top: 14px;
-    left: 16px;
-    z-index: 1;
     display: flex;
     gap: 10px;
     color: #eeeeee;
@@ -96,30 +89,42 @@ button {
 }
 
 .table {
+    width: 100%;
     display: flex;
     gap: 20px;
-    position: fixed;
-    top: calc(50% - 350px);
-    left: 50%;
-    width: 800px;
-    height: 100px;
-    transform: translateX(-50%);
     background-color: #2b2a2a;
-
     padding: 10px;
-    box-sizing: border-box;
+}
 
+.srodkowanie {
+    display: flex;
+    flex-direction: row
+}
+
+#wypelniacz-1 {
+    width: 33%;
+    height: 100%;
+}
+
+#wypelniacz-2 {
+    width: calc(33% + 44px);
+    height: 100%;
 }
 
 .history {
-    position: fixed;
-    top: 50%;
-    left: calc(50% + 400px);
-    width: 200px;
-    height: 500px;
-    transform: translateY(-50%);
     background-color: #2b2a2a;
-
     padding: 10px;
-    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+
 }
